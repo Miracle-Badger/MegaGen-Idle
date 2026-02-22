@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+dist/
+build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.idea/
+.vscode/
+
+# Other
+*.swp
+*~
