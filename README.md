@@ -1,2 +1,14 @@
-# MegaGen-Idle
-Created via n8n
+﻿General idea:
+Energy Generation Idler
+Game description:
+This is an idler game for energy creation. The goal of this game is to create as much energy as possible. Some energy creation methods include: solar panels, wind turbines, hydropower methods, tidal power, coal power, Natural Gas, nuclear Power, oil power, etc.
+The player starts with a low level of knowledge + with very low resources, and can only generate energy by using very simple and inefficient energy generation methods.
+As the player generates more energy, they can invest this energy back on resource gathering / creation of more energy creating sources / research that opens up more energy creating sources out of a skill tree. Some researches are used to give permanent boosts, for example: % of discount in building/activating tools or machines, % less resources required to do research, % more energy is globally gained, etc. Not all researches are open from level 1 - every research has a level that is required to unlock it. There is a global "Research level” - as you do more research you level it up more. Research is balanced to keep things challenging and interesting.
+Resources are primarily used to build more energy creation tools/machines. These tools require both resources and energy to make. These tools take capacity (“room”) out of the room you have. You can invest energy and resources to create more room that can be used to build more resources. Every machine has a value of how much room it takes. As the player progresses and does more research and level up, they can create more energy generation tools/machines that are more efficient (create more energy per room OR require less resources to run).
+Some tools/machines require resources to be active (like coal power) while others not (like solar panels). Usually, the tools that require resources generate more energy, but not as easy to maintain over time because the player needs to get more resources to get them active.
+Energy is calculated in an “Energy” currency the player has. As they make more energy, the value goes higher.
+Resources (for activating or building things) are saved as items in the player’s inventory as things like: coal, Natural Gas, stone, metal, etc.
+The game is an idler and the idle mechanics work basically like this:
+As time goes on, if the player has tools/machines/methods to make energy running they gather energy as real time goes on.
+Research is also taking time. When applying research to unlock new machines/methods/other upgrades, it will take real time to finish them. The lower research will take less time to complete compared to high level research.
+The machines/tools you create have their own “skill tree” - you start from very basic ones and you unlock in time (with researches) more and more complex and efficient ways to create energy, reaching in the end even methods like Nuclear fission and even some fiction methods that haven’t proven in real life (like Creating a supernova in a micro fast time moving dimension and gathering all the energy from it). Most of the methods (tools/machines) exist in real life tho, the fiction ones are minority.
