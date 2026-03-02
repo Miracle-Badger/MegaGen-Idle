@@ -1,7 +1,8 @@
+import React from 'react';
 import { useStore } from '../store';
-import { Icon } from './Icon';
+import Icon from './Icon';
 
-const EnergyDisplay = () => {
+const EnergyDisplay: React.FC = () => {
   const energy = useStore((state) => state.energy);
 
   return (
