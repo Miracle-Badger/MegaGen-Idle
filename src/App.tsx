@@ -1,9 +1,11 @@
 import React from 'react';
+import EnergyDisplay from './components/EnergyDisplay';
 
 const App: React.FC = () => {
   return (
-    <div className='bg-gray-900 text-white h-screen flex items-center justify-center'>
-      MegaGen Idle
+    <div className='p-4'>
+      <h1>MegaGen Idle</h1>
+      <EnergyDisplay />
     </div>
   );
 };
