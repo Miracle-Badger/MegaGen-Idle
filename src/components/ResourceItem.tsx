@@ -1,13 +1,12 @@
 import { useStore } from '../store';
-import { Icon } from './Icon';
 
-const ResourceItem = ({ resource }: { resource: keyof Resources }) => {
-  const quantity = useStore((state) => state.resources[resource]);
+const ResourceItem = ({ resource }: { resource: 'coal' | 'stone' | 'metal' | 'naturalGas' }) => {
+  const amount = useStore((state) => state.resources[resource]);
 
   return (
-    <div className="flex items-center">
-      <Icon type={`${resource}.png`} />
-      <span>{quantity}</span>
+    <div>
+      <Icon type={`${resource}_icon_32.png`} />
+      <span>{amount}</span>
     </div>
   );
 };

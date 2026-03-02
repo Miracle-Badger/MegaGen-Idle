@@ -14,6 +14,8 @@
   "include": [
     "src/**/*.{ts,tsx}",
     "tailwind.config.js",
-    "vite.config.ts"
+    "vite.config.ts",
+    "postcss.config.js",
+    "tsconfig.json"
   ]
 }
