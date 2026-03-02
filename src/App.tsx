@@ -1,6 +1,13 @@
 import React from 'react';
-import { render } from 'react-dom/client';
-import App from './App';
+import EnergyDisplay from './components/EnergyDisplay';
 
-const root = document.getElementById('root') as HTMLElement;
-render(<React.StrictMode><App /></React.StrictMode>, root);
+const App = () => {
+  return (
+    <div className="p-4">
+      <h1>MegaGen Idle</h1>
+      <EnergyDisplay />
+    </div>
+  );
+};
+
+export default App;

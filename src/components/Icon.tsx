@@ -1,7 +1,11 @@
-import React from 'react';
+import { IconType } from './types';
 
-const Icon = ({ type }: { type: string }) => {
-  return <img src={new URL(`../assets/sprites/${type}`, import.meta.url).href} alt={type} />;
+export const Icon = ({ type }: { type: IconType }) => {
+  return (
+    <img
+      src={new URL(`../assets/sprites/resources/${type}`, import.meta.url).href}
+      alt={type}
+      className="w-8 h-8"
+    />
+  );
 };
-
-export default Icon;

@@ -1,10 +1,13 @@
-import React from 'react';
+import { useStore } from '../store';
+import { Icon } from './Icon';
 
-const ResourceItem = ({ resource, amount }) => {
+const ResourceItem = ({ resource }: { resource: keyof Resources }) => {
+  const quantity = useStore((state) => state.resources[resource]);
+
   return (
-    <div className='flex items-center'>
-      <img src={`/assets/sprites/${resource}_icon_32.png`} alt={resource} width={32} height={32} />
-      <span className='ml-2'>{amount}</span>
+    <div className="flex items-center">
+      <Icon type={`${resource}.png`} />
+      <span>{quantity}</span>
     </div>
   );
 };
