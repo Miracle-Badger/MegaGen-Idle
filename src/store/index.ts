@@ -1,20 +1,18 @@
 import create from 'zustand';
 import { persist } from 'zustand/middleware';
 
-interface GameState {
-  energy: number;
-  resources: { coal: number; stone: number; metal: number; naturalGas: number };
-  researchLevel: number;
-  activeGenerators: string[];
-  roomCapacity: number;
-  roomUsed: number;
+interface Resources {
+  coal: number;
+  stone: number;
+  metal: number;
+  naturalGas: number;
 }
 
-const useStore = create<GameState>()(
+export const useStore = create(
   persist(
-    (set, get) => ({
+    (set) => ({
       energy: 0,
-      resources: { coal: 0, stone: 0, metal: 0, naturalGas: 0 },
+      resources: { coal: 0, stone: 0, metal: 0, naturalGas: 0 } as Resources,
       researchLevel: 1,
       activeGenerators: [],
       roomCapacity: 10,
@@ -25,5 +23,3 @@ const useStore = create<GameState>()(
     }
   )
 );
-
-export default useStore;

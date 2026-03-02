@@ -1,15 +1,11 @@
-import React from 'react';
+import { IconType } from './types';
 
-export enum IconType {
-  ENERGY = 'energy_currency_icon_32.png'
-}
-
-interface IconProps {
-  type: IconType;
-}
-
-const Icon: React.FC<IconProps> = ({ type }) => {
-  return <img src={`/assets/sprites/resources/${type}`} alt={type} className='w-8 h-8' />;
+export const Icon = ({ type }: { type: IconType }) => {
+  return (
+    <img
+      src={new URL(`../assets/sprites/resources/${type}`, import.meta.url).href}
+      alt={type}
+      className="w-8 h-8"
+    />
+  );
 };
-
-export default Icon;

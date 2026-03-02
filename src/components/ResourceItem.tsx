@@ -1,18 +1,13 @@
-import React from 'react';
-import Icon from './Icon';
 import { useStore } from '../store';
+import { Icon } from './Icon';
 
-interface ResourceItemProps {
-  resource: keyof typeof useStore.getState()['resources'];
-}
-
-const ResourceItem: React.FC<ResourceItemProps> = ({ resource }) => {
-  const quantity = useStore(state => state.resources[resource]);
+const ResourceItem = ({ resource }: { resource: keyof Resources }) => {
+  const quantity = useStore((state) => state.resources[resource]);
 
   return (
-    <div className='flex items-center'>
-      <Icon type={IconType.RESOURCE} />
-      <span className='ml-2'>{quantity}</span>
+    <div className="flex items-center">
+      <Icon type={`${resource}.png`} />
+      <span>{quantity}</span>
     </div>
   );
 };
