@@ -3,8 +3,7 @@ import EnergyDisplay from './components/EnergyDisplay';
 
 const App = () => {
   return (
-    <div className="p-4">
-      <h1>MegaGen Idle</h1>
+    <div className="App">
       <EnergyDisplay />
     </div>
   );
