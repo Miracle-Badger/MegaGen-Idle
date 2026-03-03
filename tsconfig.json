@@ -1,22 +1,21 @@
+// tsconfig.json
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
+    "target": "es5",
+    "lib": ["dom", "es2015"],
     "jsx": "react-jsx",
-    "importHelpers": true,
-    "moduleResolution": "node",
+    "module": "esnext",
     "strict": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     }
   },
   "include": [
-    "src",
-    "vite.config.ts"
+    "src/**/*"
   ]
 }
