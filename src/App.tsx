@@ -1,9 +1,9 @@
 import React from 'react';
 import EnergyDisplay from './components/EnergyDisplay';
 
-const App: React.FC = () => {
+const App = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="App">
       <EnergyDisplay />
     </div>
   );

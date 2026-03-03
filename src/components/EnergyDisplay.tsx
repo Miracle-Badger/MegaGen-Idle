@@ -1,12 +1,14 @@
 import React from 'react';
 import { useStore } from '../store';
+import Icon from './Icon';
 
-const EnergyDisplay: React.FC = () => {
+const EnergyDisplay = () => {
   const energy = useStore((state) => state.energy);
 
   return (
-    <div className="text-4xl font-bold">
-      Energy: {energy}
+    <div className="flex items-center">
+      <Icon />
+      <span>{energy}</span>
     </div>
   );
 };
