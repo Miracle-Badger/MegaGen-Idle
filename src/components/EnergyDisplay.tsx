@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useStore } from '../store';
+import Icon from './Icon';
 
-const EnergyDisplay: React.FC = () => {
-  const [energy, setEnergy] = useState<number>(0);
-
-  useEffect(() => {
-    const state = useStore.getState();
-    setEnergy(state.energy);
-  }, []);
+const EnergyDisplay = () => {
+  const energy = useStore((state) => state.energy);
 
   return (
-    <div>
-      <h2>Energy: {energy}</h2>
+    <div className="flex items-center">
+      <Icon />
+      <span>{energy}</span>
     </div>
   );
 };
