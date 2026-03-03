@@ -1,12 +1,10 @@
-import React, { useEffect } from 'react';
-import { useIdleLoop } from './utils/idleEngine';
+import React from 'react';
+import EnergyDisplay from './components/EnergyDisplay';
 
 const App = () => {
-  useIdleLoop();
-
   return (
-    <div className='App'>
-      {/* Game UI components go here */}
+    <div className="App">
+      <EnergyDisplay />
     </div>
   );
 };
