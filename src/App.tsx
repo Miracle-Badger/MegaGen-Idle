@@ -1,13 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import EnergyDisplay from './components/EnergyDisplay';
-import useIdleLoop from '../utils/idleEngine';
 
 const App = () => {
-  useEffect(() => {
-    useIdleLoop();
-  }, []);
-
-  return <EnergyDisplay />;
+  return (
+    <div className="App">
+      <EnergyDisplay />
+    </div>
+  );
 };
 
 export default App;
